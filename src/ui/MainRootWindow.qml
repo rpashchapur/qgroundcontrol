@@ -20,7 +20,7 @@ import QGroundControl.ScreenTools
 import QGroundControl.FlightDisplay
 import QGroundControl.FlightMap
 
-import QGroundControl.UTMSP              1.0
+import QGroundControl.UTMSP
 
 /// @brief Native QML top level window
 /// All properties defined here are visible to all QML pages.

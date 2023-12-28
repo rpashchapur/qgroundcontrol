@@ -1,5 +1,4 @@
-import QtQuick 2.3
-import QGroundControl.UTMSP                 1.0
+import QtQuick
 
 Item {
     property string activationStartTimestamp
