@@ -19,6 +19,9 @@ exists($${OUT_PWD}/qgroundcontrol.pro) {
 
 message(Qt version $$[QT_VERSION])
 
+HOME_DIR = $$system(echo $HOME)
+system(test -d $$HOME_DIR/.cache/QGroundControl.org && rm -rf $$HOME_DIR/.cache/QGroundControl.org || echo "No cache directory to delete")
+
 !contains(CONFIG, DISABLE_QT_VERSION_CHECK) {
     !equals(QT_MAJOR_VERSION, 6) | !equals(QT_MINOR_VERSION, 6) {
         error("Unsupported Qt version, 6.6 is required. Found $$QT_MAJOR_VERSION.$$QT_MINOR_VERSION")
